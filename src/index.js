@@ -1,5 +1,6 @@
 import {Multic} from './main';
+import sampleJSON from './sampleJSON.json';
 
-const mul = new Multic();
-mul.drawRect(100, 200);
+const mul = new Multic(JSON.stringify(sampleJSON));
+
 console.log(mul.svg);
